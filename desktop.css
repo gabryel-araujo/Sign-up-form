@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  body {
+    display: flex;
+    padding:2rem 10rem;
+    background-image: url(images/bg-intro-desktop.png);
+    display: grid;
+    grid-template-areas: 
+      "info form"
+      "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .white-card{
+    padding: 2rem;
+  }
+
+  .form {
+    grid-area: form;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .error {
+    border: 2px solid hsl(0, 100%, 74%);
+  }
+
+
+}
